@@ -1,0 +1,14 @@
+#fondo1 {
+    background: url("../img/fondo1.jpg");
+}
+
+#fondo2 {
+    background: url("../img/fondo1.jpg");
+}
+
+
+
+/* Media querie para pantallas de al menos 480px (desktop)*/
+@media (min-width: 480px) {
+
+}
