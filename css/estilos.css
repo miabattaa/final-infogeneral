@@ -1,6 +1,7 @@
 * {
      font-family: "Roboto Mono"
 }
+/*backgrounds*/
 .fondo1 {
     background: url("../img/fondo1.jpg");
 }
@@ -9,13 +10,7 @@
     background: url("../img/fondo2.jpg");
 }
 
-.home {
-    padding: 0.5em;
-    margin: 1em;
-    width: 300px;
-    height: 300px;
-}
-
+/*pie de pag*/
 footer{
     padding: 0.5em;
     margin: 1.3em;
@@ -28,6 +23,7 @@ footer li {
   footer a:visited,
   footer a:active {
     background-color: rgb(90, 38, 38);
+    color: rgb(185, 185, 185);
   }
   
   footer a:hover{
@@ -44,9 +40,11 @@ footer li {
     margin: 0.5em;
     color: black;
 }
+/*encabezado*/
 header{
     color: white;
 }
+
 .info{
     color:white;
     text-align: center;
@@ -54,6 +52,21 @@ header{
     margin: 1em;
     background-color: rgba(65, 3, 3, 0.952);
   }
+
+  .home {
+    padding: 0.5em;
+    margin: 1.5em;
+    width: 300px;
+    height: 300px;
+}
+
+section {
+    padding: 0.5em;
+    margin: 1em;
+    background-color: rgba(46, 44, 44, 0.658);
+}
+
+
 .titulos {
    background-color:  rgb(82, 6, 6);
    color: rgb(148, 146, 146);
@@ -63,17 +76,38 @@ header{
 }
 
 .parrafos {
-    padding: 0.5em;
-    margin: 1.5em;
+    padding: 0.3em;
+    margin: 2em;
     color:rgb(255, 255, 255);
+    text-align: left;
 }
 
-section {
-    padding: 0.5em;
+
+ p{
+    color: white;
+    margin: 0.5em;
+ }
+
+ .importante {
+    background-color:  rgb(82, 6, 6);
+ }
+/*links*/
+section p a {
+    background-color: rgb(245, 147, 193);
     margin: 1em;
-    background-color: rgba(46, 44, 44, 0.658);
-}
+    color:black;
+    padding: 0.4em;
+ }
 
+ header a {
+    color:rgb(170, 166, 166);
+ }
+ 
+ header a:hover {
+    color:rgb(0, 0, 0);
+    background-color: red;
+ }
+/*imagenes*/
 .img {
     height: 300px;
     width: 270px ;
@@ -82,10 +116,14 @@ section {
 }
 
 .foto{
-    margin: 1.5em;
+    margin: 2em;
+    height: 250px;
+    width: 250px ;
 }
 
-
+.ft {
+    margin: 2em;
+}
 
 /* Media querie para pantallas de al menos 480px (desktop)*/
 @media (min-width: 480px) {
@@ -106,15 +144,21 @@ section {
         padding: 0.5em;
         margin: 1.5em;
     }
-/*cambiar en mobile vertical*/
-    .imagenes {
+
+    .foto{
+        margin: 2em;
+        height: 280px;
+        width: 280px ;
+    }
+    
+    .columnas {
         flex-direction: column;
         align-items: center;
         padding: 1em;
         align-items: flex-start;
-        text-align: center;  
+        text-align: center; 
         justify-content: space-between;
     }
     
-   
+
 }
