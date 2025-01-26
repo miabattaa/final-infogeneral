@@ -1,9 +1,10 @@
+/*mobile first*/
 * {
      font-family: "Roboto Mono"
 }
 /*backgrounds*/
 .fondo1 {
-    background: url("../img/fondo1.jpg");
+    background: url("../img/fondomobile1.png");
 }
 
 #fondo2 {
@@ -53,7 +54,7 @@ header{
     background-color: rgba(65, 3, 3, 0.952);
   }
 
-  .home {
+.home{
     padding: 0.5em;
     margin: 1.5em;
     width: 300px;
@@ -75,6 +76,14 @@ section {
    padding: 0.2em;
 }
 
+.titulos2{
+   background-color: rgba(36, 36, 36, 0.836) ;
+   color: rgb(255, 255, 255);
+   margin: 0.5em;
+   text-align: center;
+   padding: 0.2em;
+}
+
 .parrafos {
     padding: 0.3em;
     margin: 2em;
@@ -86,6 +95,12 @@ section {
  p{
     color: white;
     margin: 0.5em;
+ }
+
+ .escuchar{
+    color: rgb(131, 2, 2);
+    background-color: black;
+    display: inline;
  }
 
  .importante {
@@ -115,6 +130,12 @@ section p a {
     margin: 0.2em;
 }
 
+.albums {
+    align-items: center;
+    margin: 0.5em;
+    text-align: center;
+}
+
 .foto{
     margin: 2em;
     height: 250px;
@@ -127,6 +148,15 @@ section p a {
 
 /* Media querie para pantallas de al menos 480px (desktop)*/
 @media (min-width: 480px) {
+
+    .fondo1 {
+        background: url("../img/fondo1.jpg");
+    }
+    
+    #fondo2 {
+        background: url("../img/fondo2.jpg");
+    }
+
     .home {
         padding: 0.5em;
         margin: 1em;
