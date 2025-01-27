@@ -69,9 +69,38 @@
         </div>
       </nav>
     
+    <aside>
+      <form name="contact" method="POST" data-netlify="true">
+        <fieldset>
+          <legend><strong>Ingrese sus datos</strong> </legend>
+        <label>Nombre</label>
+          <input type="text" name="nombre" id="nombre">
+          <br>
+          <br>
+          <label>Apellido</label>
+          <input type="text" name="apellido" id="apellido">
+          <br>
+          <br>
+          <label>Edad</label>
+          <input type="number" name="edad" id="edad">
+          <br>
+          <br>
+          <label>Mail</label>
+          <input type="texts" name="mail" id="mail">
+          <br>
+          <br>
+          <label>Opiniones</label>
+          <br>
+          <br>
+          <textarea name="opiniones" cols="30" rows="8" id="comentarios" placeholder="déje una opinión sobre nuestro sitio"></textarea>
+          <br>
+          <br>
+          <button id="ingresar" class="botones">Ingresar datos</button>
+        </fieldset>
+      </form>
+    </aside>
 
-
-
+    </div>
 <footer>
   <h3 class="pie"> Información de contacto</h3>
   <ul>
@@ -79,6 +108,6 @@
       <li><a href="../contacto/index.html">Contacto</a></li>
           </ul>
 </footer>
-  </div>
+  <script src="../js/form.js"></script>
 </body>
 </html>
