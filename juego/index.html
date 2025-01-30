@@ -68,6 +68,48 @@
           </div>
         </div>
       </nav>
+      <header class="info">
+        <h2>Adivina y gana </h2>
+        <p> A continuación encontrarás un juego que te pondrá a prueba como fanático</p>
+       </header>
+      
+      <section>
+        <h3 class="titulos"> Reglas </h3>
+        <p class="parrafos">Como ya habrás visto en nuestra página, joji se caracteriza por haber tenido distintas etapas en su carrera.
+          <br>
+          Dandole vida a tres personajes distintos: Filthy Frank, Pink Guy y Joji.
+          <br>
+          En el siguiente juego deberas adivinar a cual de estos tres personajes pertenece la imagen. 
+          <br>
+          Constara de tres rondas con tres turnos cada uno y tendras solo cinco segundos para elegir la opcion correcta. 
+          <br>
+          Por cada respuesta correcta ganaras tres puntos, alcanzando los <strong>21 puntos</strong> ganarás un premio al final de la partida.
+          <br>
+          Haz click en el boton de iniciar y divertite !!!
+        </p>
+      </section>
+
+      <section class="game-container">
+        <h1>Adivina quién es</h1>
+        <button class="start-button">Iniciar Juego</button>
+        <article class="image-container">
+           <article class="question-image"> </article>
+        </article>
+
+        <section class="options-container">
+            <img src="../juego/img/fficono.jpg" alt="filthy-frank" class="filthyfrank">
+            <img src="../juego/img/jjicono.jpg" alt="joji" class="joji">
+            <img src="../juego/img/pgicono.jpg" alt="pinkguy" class="pinkguy">
+
+            <h4>Tiempo restante <p class="tiemporest"></p></h4>
+        </section>
+
+        <article class="result-container" style="display: none;">
+            <h2>Resultado Final: <p id="final-score"></p></h2>
+            <button class="reload-button">Recargar Juego</button>
+        </article>
+    </section>
+    
 
 
 
@@ -79,5 +121,7 @@
       <li><a href="../contacto/index.html">Contacto</a></li>
           </ul>
 </footer>
+
+<script src="../js/juego.js"></script>
 </body>
 </html>
