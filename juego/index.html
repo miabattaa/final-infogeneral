@@ -83,35 +83,47 @@
           <br>
           Constara de tres rondas con tres turnos cada uno y tendras solo cinco segundos para elegir la opcion correcta. 
           <br>
-          Por cada respuesta correcta ganaras tres puntos, alcanzando los <strong>21 puntos</strong> ganarás un premio al final de la partida.
+          Por cada respuesta correcta ganaras tres puntos, alcanzando los <strong>24 puntos</strong> ganarás un premio al final de la partida.
           <br>
           Haz click en el boton de iniciar y divertite !!!
         </p>
       </section>
 
-      <section class="game-container">
-        <h1>Adivina quién es</h1>
-        <button class="start-button">Iniciar Juego</button>
-        <article class="image-container">
-           <article class="question-image"> </article>
-        </article>
+      <section class="contJuego">
+        <h3 class="titulos">Adivina quién es</h3>
+        <button class="iniciar">Iniciar Juego</button>
+      </section>
 
-        <section class="options-container">
-            <img src="../juego/img/fficono.jpg" alt="filthy-frank" class="filthyfrank">
-            <img src="../juego/img/jjicono.jpg" alt="joji" class="joji">
-            <img src="../juego/img/pgicono.jpg" alt="pinkguy" class="pinkguy">
-
-            <h4>Tiempo restante <p class="tiemporest"></p></h4>
+        <section id="contImg" class="ocultar">
+            <article class="mostrarImg"></article>
+            <article class="correctaImg"></article>
         </section>
 
-        <article class="result-container" style="display: none;">
-            <h2>Resultado Final: <p id="final-score"></p></h2>
-            <button class="reload-button">Recargar Juego</button>
+        <section id="opciones" class="ocultar">
+          <img src="../juego/img/fficono.jpg" alt="filthy-frank" class="filthyfrank">
+          <img src="../juego/img/jjicono.jpg" alt="joji" class="joji">
+          <img src="../juego/img/pgicono.jpg" alt="pinkguy" class="pinkguy">
+          
+          <h4>Tiempo restante <p class="tiemporest"></p></h4>
+          <h4>Resultado: <p id="score"></p></h4>
+        </section>
+
+        <article id="contResultado" class="ocultar">
+            <h4>Resultado Final: <p id="score"></p></h4>
+            <button class="recargar">Recargar Juego</button>
         </article>
-    </section>
+        
+        <article id="ganador" class="ocultar">
+         <h4>Felicidades!!!!</h4>
+         <p>Has demostrado ser un verdadero fan de joji!!! Por esto mismo te premiamos con una playlist armada
+          especificamente para vos para de difrutes de sus mejores canciones. 
+         </p>
+
+         <button id="playlist"> Playlist </button>
+        </article>
     
 
-
+  
 
     </div>
 <footer>
