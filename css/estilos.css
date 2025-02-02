@@ -10,13 +10,12 @@
 #fondo2 {
     background: url("../img/fondomobile2.jpg");
 }
-
 /*pie de pag*/
 footer{
     padding: 0.5em;
-    margin: 1.3em;
-    background-color: rgba(49, 2, 2, 0.829);
+    background-color: rgba(49, 2, 2);
 }
+
 footer li {
     list-style-type: none;
   }
@@ -184,6 +183,13 @@ aside{
     display: none;
   }
 
+  .joji,.filthyfrank,.pinkguy{
+    height: 180px;
+    width: 180px;
+    margin: 0.5em;
+   }
+
+
 /* Media querie para pantallas de al menos 480px (desktop)*/
 @media (min-width: 480px) {
 
@@ -232,5 +238,8 @@ aside{
         text-align: center; 
         justify-content: space-between;
     }
-
+   .joji,.filthyfrank,.pinkguy{
+    height: 250px;
+    width: 250px;
+   }
 }
