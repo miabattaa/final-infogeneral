@@ -163,4 +163,5 @@ reiniciar.addEventListener("click", function() {
     contOpciones.style.display = 'none'; 
     contResultado.innerHTML = ''; 
     contJuego.style.display = 'block';
+    ganador.style.display = 'none'; 
 });
