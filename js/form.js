@@ -48,7 +48,26 @@ function vaciarDatos() {
 //event
 ingreso.addEventListener('click', function(e) {
     e.preventDefault();
-    if (ingresar()) {
-        vaciarDatos();
-    }
-    });
+    let verificado = ingresar();;
+    if (verificado) {
+        // selector al formulario
+        const form = document.querySelector("#contacto");
+        // objeto FormData con los datos del formulario
+        const formData = new FormData(form);
+
+        // Enviar los datos a Netlify Forms
+        fetch("/", {
+            method: "POST",
+            headers: { "Content-Type": "application/x-www-form-urlencoded" },
+            body: new URLSearchParams(formData).toString(),
+        })
+        .then(() => {
+            alert("Formulario enviado con éxito");
+            vaciarDatos();
+        })
+        .catch(error => {
+            console.error("Error al enviar formulario:", error);
+            alert("Hubo un error al enviar el formulario.");
+        });
+    } 
+});
